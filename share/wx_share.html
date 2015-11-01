@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+
+<!-- 这段代码嵌入到要分享的html页面中 !-->
+<script src="jquery-1.11.1.min.js"></script>
+<script src="andedu_app_share.js"></script>
+<script src="json2.js"></script>
+
+<script type="text/javascript">
+
+var messagingIframe
+
+var shareUrl = 'andeduprivateapi://share'
+var shouldShowAppShareBtn = 1   // 0：不显示和教育客户端分享按钮； 1：显示和教育客户端分享按钮；
+// 和客户端做交互的类
+var AndeduAppShareJavascriptBridge = {
+	activityId: 1,	// 活动id，用于统计分享用户
+    shouldShowAndeduAppShareButton: shouldShowAppShareBtn,   // 客户端是否显示分享按钮
+    shouldStatistic:true,	// 是否统计分享数据
+    shareMessage: {   // 分享数据
+		title: "中国移动'和教育'",
+		thumbImage: "http://edu.10086.cn/upload/advertise/2e520de0-26d3-422b-bcbd-63dbb079b40e.JPEG",
+		text: "我参加了“和教育”迎新活动，亿元开学礼免费拿，还能抽iPhone6！你也快来参加吧！",
+		url: "http://edu.10086.cn/educloud/activity/kxj/index/000008"
+    }
+}
+
+// 获取分享数据方法 for ios
+function getAndeduAppShareJavascriptBridgeJsonString() {
+    return JSON.stringify(AndeduAppShareJavascriptBridge)
+}
+
+// 获取分享数据方法 android 调用
+function callAndeduAndroidShareJavascript() {
+    window.AndeduAndroidShareJavascriptBridge.andeduAndroidShareInterface(JSON.stringify(AndeduAppShareJavascriptBridge))
+}
+
+// 调用 ios、android 分享方法
+function callAndeduShare() {
+    messagingIframe.src = shareUrl
+}
+andeduAppShareResult(, %@);
+function existMessageingIframe() {
+    if (window.messagingIframe) { return true }
+    return false
+}
+
+function createMessagingIframe() {
+    if (existMessageingIframe()) { 
+        messagingIframe.src = 'andeduprivateapi://shouldShowAppShareBtn?value=' + shouldShowAppShareBtn
+        return 
+    }
+    messagingIframe = document.createElement('iframe');
+    messagingIframe.style.display = 'none'
+    // 客户端分享按钮是否显示
+    messagingIframe.src = 'andeduprivateapi://shouldShowAppShareBtn?value=' + shouldShowAppShareBtn
+    document.documentElement.appendChild(messagingIframe)
+}
+
+// 配置ying'yong
+function configAppShareBtn() {
+    messagingIframe.src = 'andeduprivateapi://shouldShowAppShareBtn?value=' + shouldShowAppShareBtn
+}
+
+</script>
+<!-- end !-->
+
+
+<!-- 添加分享按钮，html中的分享方法，,这段代码不添加到html中，仅做测试用 -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button#wxbtn0").click(function(){
+        alert("aaa")
+        callAndeduShare()
+    });
+});
+</script>
+<!-- end !-->
+
+</head>
+
+<body>
+    
+<!-- 添加分享按钮,这段代码不添加到html中，仅做测试用 -->
+<button id="wxbtn0" type="button" >调用客户端分享</button>
+
+<!-- 这段代码嵌入到要分享的html页面中 !-->
+<script type="text/javascript">
+createMessagingIframe()
+</script>
+<!-- end !-->
+
+</body>
+</html>
