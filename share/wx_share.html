@@ -44,7 +44,7 @@ function callAndeduAndroidShareJavascript() {
 function callAndeduShare() {
     messagingIframe.src = shareUrl
 }
-andeduAppShareResult(, %@);
+
 function existMessageingIframe() {
     if (window.messagingIframe) { return true }
     return false
@@ -62,7 +62,7 @@ function createMessagingIframe() {
     document.documentElement.appendChild(messagingIframe)
 }
 
-// 配置ying'yong
+// 配置应用
 function configAppShareBtn() {
     messagingIframe.src = 'andeduprivateapi://shouldShowAppShareBtn?value=' + shouldShowAppShareBtn
 }
