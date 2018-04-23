@@ -7,11 +7,11 @@
 	"config": {
 		"msyk_clientId_pro": "AALd72aM",
 		"msyk_clientId_test": "3gTwLT5K",
-		"msyk_pathUrl": "/eduselfapp/oauth/oauth_callback/h5course8",
+		"msyk_pathUrl": "/eduxdf/oauth/oauth_callback/msykh5",
 		"msyk_pathUrl_subject": "/eduselfapp/interface/study/index/8",
 		"kdjj_clientId_pro": "fK3EWdbi",
 		"kdjj_clientId_test": "AALd72aM",
-		"kdjj_pathUrl": "/eduselfapp/oauth/oauth_callback/h5course9",
+		"kdjj_pathUrl": "/eduxdf/oauth/oauth_callback/kdjjh5",
 		"kdjj_pathUrl_subject": "/eduselfapp/interface/study/index/9",
 		"msdx_clientId_pro": "YBh9FoYi",
 		"msdx_clientId_test": "YBh9FoYi",
