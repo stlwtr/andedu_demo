@@ -21,6 +21,6 @@
                 "ctb_clientId_pro": "RzgOt0mi",
 		"ctb_clientId_test": "IqTbYDh4",
 		"ctb_pathUrl_pro": "https://note.andedu.net/",
-		"ctb_pathUrl_test": "http://frontend.mistakenote-edu-m.xuebadev.com/"
+		"ctb_pathUrl_test": "http://mistakenote-edu-m.qa.xuebadev.com/"
 	}
 }
