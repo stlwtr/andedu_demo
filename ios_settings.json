@@ -1,30 +1,30 @@
 {
-	"desc": "成功",
-	"result": 0,
-	"body": {
-		"hide_versions": ""
-	},
-	"config": {
-		"msyk_clientId_pro": "AALd72aM",
-		"msyk_clientId_test": "3gTwLT5K",
-		"msyk_pathUrl": "/eduxdf/oauth/oauth_callback/msykh5",
-		"msyk_pathUrl_subject": "/eduselfapp/interface/study/index/8",
-		"kdjj_clientId_pro": "fK3EWdbi",
-		"kdjj_clientId_test": "AALd72aM",
-		"kdjj_pathUrl": "/eduxdf/oauth/oauth_callback/kdjjh5",
-		"kdjj_pathUrl_subject": "/eduselfapp/interface/study/index/9",
-		"msdx_clientId_pro": "YBh9FoYi",
-		"msdx_clientId_test": "YBh9FoYi",
-		"msdx_pathUrl": "/edumsdx/oauth/oauth_callback/h5msdx",
-		"mxzy_pathUrl_pro": "http://edu.10086.cn/edumxzy/h5mxzy/h5index?userId=1&phaseStudy=1&provinceId=1",
-		"mxzy_pathUrl_test": "/jqmxzy/h5mxzy/h5index",
-		"mxzy_clientId_pro": "3qBT2ueS",
-		"mxzy_clientId_test": "3qBT2ueS",
-		"mxzy_pathUrl_oauth_pro": "/jqmxzy/oauth/oauth_callback/h5mxzyjq",
-		"mxzy_pathUrl_oauth_test": "/jqmxzy/oauth/oauth_callback/h5mxzyjq",
-                "ctb_clientId_pro": "RzgOt0mi",
-		"ctb_clientId_test": "IqTbYDh4",
-		"ctb_pathUrl_pro": "https://note.andedu.net/",
-		"ctb_pathUrl_test": "http://mistakenote-edu-m.qa.xuebadev.com/"
-	}
+  "body" : {
+    "hide_versions" : ""
+  },
+  "config" : {
+    "ctb_clientId_pro" : "RzgOt0mi",
+    "ctb_clientId_test" : "IqTbYDh4",
+    "ctb_pathUrl_pro" : "https://note.andedu.net/",
+    "ctb_pathUrl_test" : "http://mistakenote-edu-m.qa.xuebadev.com/",
+    "kdjj_clientId_pro" : "fK3EWdbi",
+    "kdjj_clientId_test" : "AALd72aM",
+    "kdjj_pathUrl" : "/eduxdf/oauth/oauth_callback/kdjjh5",
+    "kdjj_pathUrl_subject" : "/eduselfapp/interface/study/index/9",
+    "msdx_clientId_pro" : "YBh9FoYi",
+    "msdx_clientId_test" : "YBh9FoYi",
+    "msdx_pathUrl" : "/edumsdx/oauth/oauth_callback/h5msdx",
+    "msyk_clientId_pro" : "AALd72aM",
+    "msyk_clientId_test" : "3gTwLT5K",
+    "msyk_pathUrl" : "/eduxdf/oauth/oauth_callback/msykh5",
+    "msyk_pathUrl_subject" : "/eduselfapp/interface/study/index/8",
+    "mxzy_clientId_pro" : "3qBT2ueS",
+    "mxzy_clientId_test" : "3qBT2ueS",
+    "mxzy_pathUrl_oauth_pro" : "/jqmxzy/oauth/oauth_callback/h5mxzyjq",
+    "mxzy_pathUrl_oauth_test" : "/jqmxzy/oauth/oauth_callback/h5mxzyjq",
+    "mxzy_pathUrl_pro" : "http://edu.10086.cn/edumxzy/h5mxzy/h5index?userId=1&phaseStudy=1&provinceId=1",
+    "mxzy_pathUrl_test" : "/jqmxzy/h5mxzy/h5index"
+  },
+  "desc" : "成功",
+  "result" : 0
 }
